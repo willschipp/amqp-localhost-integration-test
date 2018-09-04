@@ -1,0 +1,44 @@
+{
+  "id" : "bb392231-2425-49b9-9e1e-30303123479d",
+  "type" : "Memory",
+  "name" : "default",
+  "modelVersion" : "7.0",
+  "lastUpdatedTime" : 1535648192338,
+  "createdTime" : 1535648192338,
+  "exchanges" : [ {
+    "id" : "3dc15e8d-1148-4942-ab02-078744b77ff8",
+    "name" : "amq.direct",
+    "type" : "direct",
+    "lastUpdatedTime" : 1535648192338,
+    "createdTime" : 1535648192338
+  }, {
+    "id" : "25d30e40-c851-482f-b4b8-8db81f4cff5f",
+    "name" : "amq.fanout",
+    "type" : "fanout",
+    "lastUpdatedTime" : 1535648192338,
+    "createdTime" : 1535648192338
+  }, {
+    "id" : "f0da57ca-3ffe-4352-9175-3f5c1a4e53f6",
+    "name" : "amq.match",
+    "type" : "headers",
+    "lastUpdatedTime" : 1535648192338,
+    "createdTime" : 1535648192338
+  }, {
+    "id" : "51ba9b5e-479f-4dce-9d74-8d54965279bc",
+    "name" : "amq.topic",
+    "type" : "topic",
+    "lastUpdatedTime" : 1535648192338,
+    "createdTime" : 1535648192338
+  }, {
+    "id" : "e19b7c30-446b-4f45-b32f-35c3adc28b1c",
+    "name" : "default",
+    "type" : "topic",
+    "durable" : true,
+    "lifetimePolicy" : "PERMANENT",
+    "durableBindings" : [ ],
+    "lastUpdatedBy" : "ANONYMOUS",
+    "lastUpdatedTime" : 1535726674745,
+    "createdBy" : "ANONYMOUS",
+    "createdTime" : 1535726674745
+  } ]
+}

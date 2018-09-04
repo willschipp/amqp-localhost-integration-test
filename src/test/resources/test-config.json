@@ -1,0 +1,25 @@
+{
+  "name" :"Embedded Broker",
+  "modelVersion" : "7.0",
+  "defaultVirtualHost" : "default",
+  "authenticationproviders" : [ {
+    "name" : "anonymous",
+    "type" : "Anonymous"
+  } ],
+  "ports" : [ {
+    "name" : "AMQP",
+    "port" : "${qpid.amqp_port}",
+    "protocols": [ "AMQP_0_9_1" ],
+    "authenticationProvider" : "anonymous",
+    "virtualhostaliases" : [ {
+      "name" : "defaultAlias",
+      "type" : "defaultAlias"
+    } ]
+  } ],
+  "virtualhostnodes" : [ {
+    "name" : "default",
+    "type" : "JSON",
+    "defaultVirtualHostNode" : "true",
+    "virtualHostInitialConfiguration" : "{ \"type\" : \"Memory\" }"
+  } ]
+}
